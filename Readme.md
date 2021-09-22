@@ -1,4 +1,4 @@
-* Simple CEC Remote Control
+# Simple Rpi4 CEC Python Sample
 
 - sudo apt-get update
 - sudo apt-get install cmake libudev-dev libxrandr-dev python-dev swig
