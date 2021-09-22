@@ -26,6 +26,10 @@ def cecCb(event, level, time, message):
         cmds = ['/usr/bin/amixer set Master 1%-',]
     elif    pKey == 'down':
         cmds = ['/usr/bin/amixer set Master 1%-',]
+    elif    pKey == 'left':
+        cmds = ['xdotool key "Alt_L+Left"',]
+    elif    pKey == 'right':
+        cmds = ['xdotool key "Alt_L+Right"',]
     # Low Priority
     elif    pKey == 'select':
         cmds = ['xdotool key BackSpace',]
@@ -36,12 +40,15 @@ def cecCb(event, level, time, message):
                 ]
     elif    pKey == 'rewind':
         cmds = [
-                'xdotool key "Alt_L+Left"',
-                'xdotool key "p"',]
+                'xdotool key Left',
+                # 'xdotool key "j"',
+                # 'xdotool key "p"',
+                ]
     elif    pKey == 'Fast forward':
         cmds = [
-                'xdotool key "Alt_L+Right"',
-                'xdotool key "n"',
+                'xdotool key Right',
+                # 'xdotool key "l"',
+                # 'xdotool key "n"',
                 ]
     elif    pKey == 'return':
         cmds = ['xdotool key "F5"',]
