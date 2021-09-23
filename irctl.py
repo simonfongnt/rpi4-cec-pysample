@@ -12,10 +12,10 @@ def getKey(message):
 
 def cecCb(event, level, time, message):
     pKey, hKey, rKey = getKey(message)
-    # if pKey or hKey or rKey:
-    #     print(pKey, hKey, rKey)
-    # else:
-    #     print(message)
+    if pKey or hKey or rKey:
+        print(pKey, hKey, rKey)
+    else:
+        print(message)
     cmds = []
     # High Priority    
     if      pKey == 'channel up':
@@ -23,7 +23,7 @@ def cecCb(event, level, time, message):
     elif    pKey == 'channel down':
         cmds = ['/usr/bin/amixer set Master 1%-',]
     elif    pKey == 'up':
-        cmds = ['/usr/bin/amixer set Master 1%-',]
+        cmds = ['/usr/bin/amixer set Master 1%+',]
     elif    pKey == 'down':
         cmds = ['/usr/bin/amixer set Master 1%-',]
     elif    pKey == 'left':
