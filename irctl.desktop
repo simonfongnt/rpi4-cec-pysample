@@ -1,0 +1,3 @@
+[Desktop Entry]
+    Name=irctl
+    Exec=/usr/bin/python3 /home/pi/Documents/scripts/rpi4-cec-pysample/irctl.py

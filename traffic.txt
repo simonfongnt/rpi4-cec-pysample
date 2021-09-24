@@ -1,0 +1,131 @@
+<< 1f:84:20:00:01
+CEC client registered: libCEC version = 4.0.7, client version = 4.0.4, firmware version = 1, logical address(es) = Recorder 1 (1) , physical address: 2.0.0.0, compiled on Linux-5.10.17-v8+ ... , features: P8_USB, DRM, P8_detect, randr, RPi, Exynos, Linux, AOCEC
+<< Recorder 1 (1) -> TV (0): OSD name 'python-cec'
+
+startup
+No device type given. Using 'recording device'
+CEC Parser created - libCEC version 4.0.7
+no serial port given. trying autodetect: 
+ path:     Raspberry Pi
+ com port: RPI
+
+opening a connection to the CEC adapter...
+DEBUG:   [              37]     Broadcast (F): osd name set to 'Broadcast'
+DEBUG:   [              38]     Open - vc_cec initialised
+DEBUG:   [              38]     logical address changed to Free use (e)
+NOTICE:  [              38]     connection opened
+DEBUG:   [              38]     << Broadcast (F) -> TV (0): POLL
+DEBUG:   [              38]     initiator 'Broadcast' is not supported by the CEC adapter. using 'Free use' instead
+DEBUG:   [              38]     processor thread started
+DEBUG:   [            1538]     initiator 'Broadcast' is not supported by the CEC adapter. using 'Free use' instead
+DEBUG:   [            1571]     >> POLL sent
+DEBUG:   [            1571]     TV (0): device status changed into 'present'
+DEBUG:   [            1571]     << requesting vendor ID of 'TV' (0)
+DEBUG:   [            4572]     registering new CEC client - v4.0.7
+DEBUG:   [            4572]     SetClientVersion - using client version '4.0.7'
+NOTICE:  [            4572]     setting HDMI port to 1 on device TV (0)
+DEBUG:   [            4572]     detecting logical address for type 'recording device'
+DEBUG:   [            4572]     trying logical address 'Recorder 1'
+DEBUG:   [            4572]     << Recorder 1 (1) -> Recorder 1 (1): POLL
+DEBUG:   [           13832]     >> POLL not sent
+DEBUG:   [           13832]     using logical address 'Recorder 1'
+DEBUG:   [           13832]     Recorder 1 (1): device status changed into 'handled by libCEC'
+DEBUG:   [           13832]     Recorder 1 (1): power status changed from 'unknown' to 'on'
+DEBUG:   [           13832]     Recorder 1 (1): vendor = Pulse Eight (001582)
+DEBUG:   [           13832]     Recorder 1 (1): CEC version 1.4
+DEBUG:   [           13832]     AllocateLogicalAddresses - device '0', type 'recording device', LA '1'
+DEBUG:   [           13833]     logical address changed to Recorder 1 (1)
+DEBUG:   [           13833]     Recorder 1 (1): osd name set to 'CECTester'
+DEBUG:   [           13833]     Recorder 1 (1): menu language set to 'eng'
+DEBUG:   [           13833]     GetPhysicalAddress - physical address = 2000
+DEBUG:   [           13833]     using auto-detected physical address 2000
+DEBUG:   [           13833]     Recorder 1 (1): physical address changed from ffff to 2000
+DEBUG:   [           13833]     << Recorder 1 (1) -> broadcast (F): physical address 2000
+NOTICE:  [           15365]     CEC client registered: libCEC version = 4.0.7, client version = 4.0.7, firmware version = 1, logical address(es) = Recorder 1 (1) , physical address: 2.0.0.0, compiled on Linux-5.10.17-v8+ ... , features: P8_USB, DRM, P8_detect, randr, RPi, Exynos, Linux, AOCEC
+DEBUG:   [           15365]     << Recorder 1 (1) -> TV (0): OSD name 'CECTester'
+DEBUG:   [           18367]     << requesting power status of 'TV' (0)
+waiting for input
+log level changed to 8
+TRAFFIC: [           21499]     >> 01:90:00
+TRAFFIC: [           23032]     >> 01:90:00
+
+power standby from Recorder 1
+TRAFFIC: [          139794]     >> 0f:36
+
+power on from Recorder 1
+TRAFFIC: [          169691]     >> 0f:32:63:68:69
+TRAFFIC: [          172613]     >> 0f:80:00:00:20:00
+TRAFFIC: [          172613]     << 10:8c
+TRAFFIC: [          174113]     << 10:8c
+TRAFFIC: [          175614]     << 10:04
+TRAFFIC: [          177114]     << 10:04
+TRAFFIC: [          177210]     << 1f:82:20:00
+TRAFFIC: [          178711]     << 1f:82:20:00
+TRAFFIC: [          180212]     >> 01:8c
+TRAFFIC: [          180212]     << 1f:87:00:15:82
+TRAFFIC: [          181713]     << 10:8c
+TRAFFIC: [          183214]     << 10:8c
+TRAFFIC: [          184715]     << 10:04
+TRAFFIC: [          184874]     << 1f:82:20:00
+TRAFFIC: [          186375]     << 1f:82:20:00
+TRAFFIC: [          186407]     << 10:8e:00
+TRAFFIC: [          187907]     << 10:8e:00
+TRAFFIC: [          189407]     >> 01:83
+TRAFFIC: [          189407]     << 1f:84:20:00:01
+TRAFFIC: [          190908]     >> 0f:87:00:00:f0
+TRAFFIC: [          190908]     << 1f:87:00:15:82
+TRAFFIC: [          192408]     << 1f:87:00:15:82
+TRAFFIC: [          193909]     >> 01:46
+TRAFFIC: [          193909]     << 10:47:43:45:43:54:65:73:74:65:72
+TRAFFIC: [          195409]     >> 01:a0:00:00:f0:23
+TRAFFIC: [          195409]     << 10:a0:00:00:f0:24:00:80
+TRAFFIC: [          196910]     >> 01:9f
+TRAFFIC: [          196910]     << 10:9e:05
+TRAFFIC: [          198410]     >> 0f:87:00:00:f0
+TRAFFIC: [          198411]     << 1f:87:00:15:82
+TRAFFIC: [          199911]     << 1f:87:00:15:82
+TRAFFIC: [          201411]     >> 0f:85
+TRAFFIC: [          201412]     << 1f:82:20:00
+TRAFFIC: [          201734]     >> 01:1a:01
+TRAFFIC: [          201734]     << 10:1b:1a
+TRAFFIC: [          215528]     >> 0f:87:00:00:f0
+TRAFFIC: [          215528]     << 1f:87:00:15:82
+TRAFFIC: [          217029]     << 1f:87:00:15:82
+TRAFFIC: [          218592]     >> 0f:87:00:00:f0
+TRAFFIC: [          218592]     << 1f:87:00:15:82
+TRAFFIC: [          220093]     << 1f:87:00:15:82
+
+switch channel from Recorder 1 to TV(0)
+TRAFFIC: [          256319]     >> 0f:82:00:00
+TRAFFIC: [          256693]     >> 0f:80:20:00:00:00
+
+power standby from TV (0)
+TRAFFIC: [          288037]     >> 0f:36
+
+power on from TV (0)
+TRAFFIC: [          349289]     >> 0f:32:63:68:69
+TRAFFIC: [          352001]     >> 01:8c
+TRAFFIC: [          352001]     << 1f:87:00:15:82
+TRAFFIC: [          353533]     >> 01:83
+TRAFFIC: [          353533]     << 1f:84:20:00:01
+TRAFFIC: [          355066]     >> 01:46
+TRAFFIC: [          355066]     << 10:47:43:45:43:54:65:73:74:65:72
+TRAFFIC: [          356599]     >> 01:a0:00:00:f0:23
+TRAFFIC: [          356599]     << 10:a0:00:00:f0:24:00:80
+TRAFFIC: [          358131]     >> 01:9f
+TRAFFIC: [          358132]     << 10:9e:05
+TRAFFIC: [          359664]     >> 0f:82:00:00
+
+switch channel from TV(0) to Recorder 1
+TRAFFIC: [          406630]     >> 0f:80:00:00:20:00
+TRAFFIC: [          406630]     << 10:04
+TRAFFIC: [          408130]     << 10:04
+TRAFFIC: [          408161]     << 1f:82:20:00
+TRAFFIC: [          409662]     << 1f:82:20:00
+TRAFFIC: [          412162]     << 10:04
+TRAFFIC: [          412760]     << 1f:82:20:00
+TRAFFIC: [          414260]     << 1f:82:20:00
+TRAFFIC: [          414292]     << 10:8e:00
+TRAFFIC: [          415793]     << 10:8e:00
+TRAFFIC: [          417294]     >> 01:1a:01
+TRAFFIC: [          417294]     << 10:1b:1a
